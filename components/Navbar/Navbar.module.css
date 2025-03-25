@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 3rem;
+        margin: auto 0;
+}
+
+.button {
+  width: 115;   
+  height: 39;
+  top: 53px;
+  left: 1271px;
+  border-radius: 50px;
+  color: white;
+  background: #623280;
+  border: none;
+  font-weight: 500;
+  font-size: larger;
+  font-family: Inter;
+}
+
+.nav ul{
+        display: flex;
+        gap: 2rem;
+        font-weight: 500;
+        font-size: large;
+        list-style-type: none;
+        justify-content: center;
+        align-items: center;
+}

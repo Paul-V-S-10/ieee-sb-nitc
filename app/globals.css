@@ -3,3 +3,12 @@
   --foreground: #171717;
 }
 
+body{
+  background-color: black;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}

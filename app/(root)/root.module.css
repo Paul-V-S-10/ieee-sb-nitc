@@ -1,0 +1,11 @@
+.root {
+  background-image: url("../../public/background.svg");
+  background-size: cover;
+  background-position: center;
+  width: 1457.4438827737138px;
+  height: 2452.6030864398163px;
+  position: absolute;
+  top: 20px;
+  left: 250px;
+  z-index: -1;
+}
