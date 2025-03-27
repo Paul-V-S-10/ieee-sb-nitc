@@ -5,6 +5,8 @@
 
 body{
   background-color: black;
+  overflow-x: hidden;
+  z-index: 1;
 }
 
 a{
@@ -12,3 +14,4 @@ a{
   text-decoration: none;
   cursor: pointer;
 }
+

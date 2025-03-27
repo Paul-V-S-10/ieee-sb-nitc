@@ -1,12 +1,43 @@
-import React from 'react'
-import Features from "../../components/Features/Features"
-import styles from "./root.module.css"
+import React from "react";
+import Features from "../../components/Features/Features";
+import styles from "./root.module.css";
+
 const page = () => {
   return (
     <div className={styles.root}>
-      {/*<Features />*/}
-      </div>
-  )
-}
+      <div className={styles.mainContainer}>
+        <div className={styles.background}>
+          <div className={styles.image1}></div>
+          <div className={styles.image2}></div>
+        </div>
+        <div className={styles.main}>
+          <div className={styles.textWrapper}>
+            <h1>
+              Welcome To <span className={styles.highlight}>IEEE SB NITC</span>
+            </h1>
+          </div>
+          <div className={styles.textWrapper}>
+            <p>| The Official Website Of IEEE Student Branch NIT, Calicut |</p>
+          </div>
+        </div>
 
-export default page
+        <div className={styles.card}>
+          <p>
+            IEEE SB NITC strives to
+            <strong>
+              foster innovation, knowledge-sharing and professional growth
+            </strong>
+            among its members. Through our events, we provide a platform for
+            students to explore emerging technologies, expand their network and
+            develop crucial skills. Join us as we embark on this exciting
+            journey of innovation and growth!
+          </p>
+          <button>About Us</button>
+        </div>
+      </div>
+      <Features />
+    </div>
+  );
+};
+
+export default page;

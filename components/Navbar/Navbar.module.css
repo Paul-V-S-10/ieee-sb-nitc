@@ -1,16 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 .nav{
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 1rem 3rem;
-        margin: auto 0;
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+        flex-wrap: wrap;
 }
 
 .button {
-  width: 115;   
-  height: 39;
+  width: 115px;   
+  height: 39px;
   top: 53px;
   left: 1271px;
   border-radius: 50px;
@@ -19,7 +21,8 @@
   border: none;
   font-weight: 500;
   font-size: larger;
-  font-family: Inter;
+  font-family: var(--inter);
+  cursor: pointer;
 }
 
 .nav ul{
