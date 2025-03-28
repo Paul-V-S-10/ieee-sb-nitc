@@ -3,10 +3,10 @@
   flex-direction: column;
   justify-content: center;
 }
-  .background {
-    position: absolute;
-    z-index: -1;
-  }
+.background {
+  position: absolute;
+  z-index: -1;
+}
 
 .image1,
 .image2 {
@@ -20,7 +20,7 @@
 .image1 {
   background: url("/background.svg");
   width: 1457.4438827737138px;
-  height: 2452.6030864398163px;
+  min-height: 2900px;
   position: relative;
   top: 20px;
   left: 20px;
@@ -29,7 +29,11 @@
 
 .image2 {
   background: url("/background-2.svg");
-  transform: scale(1.1);
+  transform: scale(1.2);
+  position: absolute;
+  top: 3200px;
+  min-width: 100vw;
+  min-height: 2000px;
 }
 
 .mainContainer {
@@ -102,7 +106,7 @@
   max-width: 80%;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.5);
-  padding:1.5rem 1rem ;
+  padding: 1.5rem 1rem;
   border-radius: 50px;
 }
 

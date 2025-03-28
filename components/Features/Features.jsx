@@ -10,14 +10,14 @@ const Features = () => {
       <div className={styles.left}>
         <h2>WHY IEEE?</h2>
         <h6>
-          Our project aims to estabilish a global standardization platform
+          Our project aims to establish a global standardization platform
           dedicated to knowledge sharing and education
         </h6>
       </div>
       <div className={styles.right}>
         <div className={styles.box} id={styles.box1}>
           <h3>Global Standardization</h3>
-          <Image src={image1} width={110} height={110} />
+          <Image src={image1} width={110} height={110} alt="icon" />
           <p>
             Set global standards for various technological domains. It develops
             and publishes technical standards that ensure interoperability,
@@ -33,6 +33,7 @@ const Features = () => {
             className={styles.image}
             width={110}
             height={110}
+            alt="icon"
           />
           <p>
             A vast platform for knowledge sharing and networking among
@@ -50,6 +51,7 @@ const Features = () => {
             className={styles.image}
             width={110}
             height={110}
+            alt="icon"
           />
           <p>
             A range of educational resources and professional development

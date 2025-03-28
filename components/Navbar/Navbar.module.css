@@ -1,17 +1,25 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+  width: 100%;
+  max-width: 90vw;
+  margin: 0 auto;
+}
 
-.nav{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 3rem;
-        width: 100%;
-        max-width: 1400px;
-        margin: 0 auto;
-        flex-wrap: wrap;
+.nav ul {
+  display: flex;
+  gap: 3rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  list-style: none;
+  margin-left: auto;
+  align-items: center;
 }
 
 .button {
-  width: 115px;   
+  min-width: 115px;
   height: 39px;
   top: 53px;
   left: 1271px;
@@ -23,14 +31,4 @@
   font-size: larger;
   font-family: var(--inter);
   cursor: pointer;
-}
-
-.nav ul{
-        display: flex;
-        gap: 2rem;
-        font-weight: 500;
-        font-size: large;
-        list-style-type: none;
-        justify-content: center;
-        align-items: center;
 }
