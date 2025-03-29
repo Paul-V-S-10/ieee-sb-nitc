@@ -1,0 +1,102 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.top-line{
+    border: 1px solid #5F2E7F;
+}
+
+.top-content{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 170px;
+}
+
+.box1{
+    width: 300px;
+    gap: 30px;
+}
+
+.box1-title{
+    font-weight: 800;
+    font-size: 30px;
+    background: linear-gradient(45deg, #ff2dce, #0051ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.box1-content{
+    font-size: 18px;
+}
+
+.box1-end{
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+.instagram-icon{
+    background: linear-gradient(45deg, #fccc63, #e1306c, #833ab4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.box4-content{
+    flex-wrap: wrap;
+}
+
+.box25-title{
+    font-size: 18px;
+}
+
+.box25-content{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 150px;
+    gap: 15px;
+}
+
+.box a{
+    color: white;
+}
+
+.bottom-line{
+    border: 1px solid #9C6572;
+}
+
+.bottom-content{
+    text-align: center;
+    margin: 20px;
+}

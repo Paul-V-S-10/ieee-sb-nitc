@@ -1,0 +1,97 @@
+import React from "react"
+import "./style.css"
+
+const footer = () => {
+    return (
+        <footer>
+            <div className="top">
+                <div className="top-line">
+
+                </div>
+                <div className="top-content">
+                    <div className="box box1">
+                        <div className="box1-title">
+                            IEEE SB NITC
+                        </div>
+                        <div className="box1-content">
+                            <div>
+                                Thank you for visiting our website!
+                            </div>
+                            <div>
+                                "Prepare to embark on a captivating journey through the corridors of innovation."
+                            </div>
+                            <div>
+                                We warmly appreciate your visit and support.
+                            </div>
+                        </div>
+                        <div className="box1-end">
+                            <a href="https://facebook.com" target="_blank"><i className="fa-brands fa-square-facebook fa-2x"
+                                style="color: #1877F2;"></i></a>
+                            <a href="https://instagram.com" target="_blank"><i className="fa-brands fa-instagram fa-2x instagram-icon"
+                            ></i></a>
+                            <a href="https://linkedin.com" target="_blank"><i className="fa-brands fa-linkedin fa-2x"
+                                style="color: #0077B5;"></i></a>
+                        </div>
+                    </div>
+                    <div className="box">
+                        <div className="box25-title">
+                            QUICK LINKS
+                        </div>
+                        <ul className="box25-content">
+                            <li><a href="#">IEEE.ORG</a></li>
+                            <li><a href="#">IEEE XTREME</a></li>
+                            <li><a href="#">IEEE Xplore</a></li>
+                            <li><a href="#">IEEE</a></li>
+                        </ul>
+                    </div>
+                    <div className="box">
+                        <div className="box25-title">
+                            MEMBERSHIPS
+                        </div>
+                        <ul className="box25-content">
+                            <li><a href="#">Join IEEE</a></li>
+                            <li><a href="#">Join a Society</a></li>
+                            <li><a href="#">Renew Membership</a></li>
+                            <li><a href="#">Info</a></li>
+                        </ul>
+                    </div>
+                    <div className="box">
+                        <div className="box25-title">
+                            SOCIETIES
+                        </div>
+                        <ul className="box25-content box4-content">
+                            <li>CASS</li>
+                            <li>ComSoc</li>
+                            <li>CS</li>
+                            <li>CSS</li>
+                            <li>IAS</li>
+                            <li>EDS</li>
+                            <li>EdSoc</li>
+                            <li>RAS</li>
+                            <li>SPS</li>
+                        </ul>
+                    </div>
+                    <div className="box box5">
+                        <div className="box25-title">
+                            AFFINITY AND SPECIAL INTEREST GROUP
+                        </div>
+                        <ul className="box25-content">
+                            <li>WIE</li>
+                            <li>SIGHT</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div className="bottom">
+                <div className="bottom-line">
+
+                </div>
+                <div className="bottom-content">
+                    &copy; Copyright 2025 IEEE SB NITC
+                </div>
+            </div>
+        </footer>
+    );
+}
+
+export default footer;
