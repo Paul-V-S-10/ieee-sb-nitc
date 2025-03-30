@@ -1,11 +1,10 @@
 .section {
   background-color: #845f9d;
   border-radius: 3rem;
-  max-width: 85vw;
-  padding: 4rem 0rem 3.5rem 2rem;
+  max-width: 75vw;
+  padding: 5rem 0rem 3.5rem 2rem;
   color: white;
   display: flex;
-  gap: 2rem;
   align-items: flex-start;
   position: relative;
   margin: 1rem auto;
@@ -26,14 +25,14 @@
 
 .right {
   margin: 1rem 0rem;
-  width: 50%;
+  width: 60%;
   display: flex;
   white-space: nowrap;
   scroll-snap-type: x mandatory;
   overflow-x: auto;
   scrollbar-width: none; /* Hide scrollbar for Firefox */
   -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
-  gap: 1rem;
+  gap: 2rem;
   cursor: grab;
 }
 
@@ -45,30 +44,32 @@
   font-size: 3rem;
   margin: 1rem 0rem 0.5rem 2rem;
   position: absolute;
-  top: 5%;
+  top: 12%;
+  left: 4%;
 }
 .section h6 {
+
   line-height: 1.5;
   font-size: 1.2rem;
-  max-width: 55%;
+  margin: 8rem 0rem 0rem 1rem;
+  max-width: 72%;
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
 
 .box {
   color: black;
-  border-radius: 2rem;
-  margin-left: 1.5rem;
-  padding: 0.75rem 1.5rem 1.5rem 1.5rem;
+  border-radius: 3rem;
+  padding: 0.75rem 1.5rem 2.5rem 1.5rem;
   display: flex;
   align-items: center;
   gap: 10px;
   white-space: normal;
   overflow-wrap: break-word;
   flex-wrap: wrap;
-  max-width: 460px;
+  max-width: 500px;
   min-width: 65%;
-  max-height: 280px;
+  max-height: 300px;
   scroll-snap-align: start;
 }
 
