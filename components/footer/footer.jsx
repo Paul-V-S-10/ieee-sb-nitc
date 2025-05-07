@@ -40,35 +40,19 @@ const footer = () => {
                     <div className="box">
                         <div className="box25-title">QUICK LINKS</div>
                         <ul className="box25-content">
-                            <li>
-                                <a href="#">IEEE.ORG</a>
-                            </li>
-                            <li>
-                                <a href="#">IEEE XTREME</a>
-                            </li>
-                            <li>
-                                <a href="#">IEEE Xplore</a>
-                            </li>
-                            <li>
-                                <a href="#">IEEE</a>
-                            </li>
+                            <li><a href="https://www.ieee.org/">IEEE.ORG</a></li>
+                            <li><a href="https://ieeextreme.org/">IEEE XTREME</a></li>
+                            <li><a href="https://ieeexplore.ieee.org/Xplore/home.jsp">IEEE Xplore</a></li>
+                            <li><a href="https://www.ieee.org/about/index.html">IEEE</a></li>
                         </ul>
                     </div>
                     <div className="box">
                         <div className="box25-title">MEMBERSHIPS</div>
                         <ul className="box25-content">
-                            <li>
-                                <a href="#">Join IEEE</a>
-                            </li>
-                            <li>
-                                <a href="#">Join a Society</a>
-                            </li>
-                            <li>
-                                <a href="#">Renew Membership</a>
-                            </li>
-                            <li>
-                                <a href="#">Info</a>
-                            </li>
+                            <li><a href="https://www.ieee.org/membership/join/index.html">Join IEEE</a></li>
+                            <li><a href="https://www.ieee.org/membership-catalog/index.html?srchProdType=Societies&searchType=prodType">Join a Society</a></li>
+                            <li><a href="https://www.ieee.org/membership/renew.html?utm_source=button_text&utm_medium=lp-membership&utm_campaign=renew">Renew Membership</a></li>
+                            <li><a href="https://www.ieee.org/membership/benefits/index.html">Info</a></li>
                         </ul>
                     </div>
                     <div className="box">
