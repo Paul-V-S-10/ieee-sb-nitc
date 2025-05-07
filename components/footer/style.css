@@ -33,12 +33,24 @@ footer{
     gap: 30px;
 }
 
+@media (max-width: 440px){
+    .top-content{
+        gap: 50px;
+    }
+}
+
 .box{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     gap: 20px;
     width: 170px;
+}
+
+@media (max-width: 440px){
+    .box{
+        gap: 25px;
+    }
 }
 
 .box1{
@@ -54,15 +66,33 @@ footer{
     -webkit-text-fill-color: transparent;
 }
 
+@media (max-width: 440px){
+    .box1-span-title{
+        font-size: 30px;
+    }
+}
+
 .box1-content{
     font-size: 18px;
     font-weight: 300;
+}
+
+@media (max-width: 440px){
+    .box1-content{
+        font-size: 12px;
+    }
 }
 
 .box1-end{
     display: flex;
     justify-content: flex-start;
     gap: 40px;
+}
+
+@media (max-width: 440px){
+    .box1-end{
+        justify-content: center;
+    }
 }
 
 .instagram-icon{
@@ -73,6 +103,13 @@ footer{
 
 .box4-content{
     flex-wrap: wrap;
+    height: 150px;
+}
+
+@media (max-width: 440px){
+    .box4-content{
+        height: 180px;
+    }
 }
 
 .box25-title{
@@ -86,8 +123,13 @@ footer{
     margin: 0;
     padding: 0;
     list-style: none;
-    height: 150px;
     gap: 15px;
+}
+
+@media (max-width: 440px){
+    .box25-content{
+        gap: 20px;
+    }
 }
 
 .box a{
@@ -100,5 +142,5 @@ footer{
 
 .bottom-content{
     text-align: center;
-    margin: 20px;
+    margin-top: 20px;
 }
