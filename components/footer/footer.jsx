@@ -5,60 +5,74 @@ const footer = () => {
     return (
         <footer>
             <div className="top">
-                <div className="top-line">
-
-                </div>
+                <div className="top-line"></div>
                 <div className="top-content">
                     <div className="box box1">
-                        <div className="box1-title">
-                            IEEE SB NITC
+                        <div>
+                            <span className="box1-span-title">IEEE SB NITC</span>
                         </div>
                         <div className="box1-content">
+                            <div>Thank you for visiting our website!</div>
                             <div>
-                                Thank you for visiting our website!
+                                "Prepare to embark on a captivating journey through the corridors of
+                                innovation."
                             </div>
-                            <div>
-                                "Prepare to embark on a captivating journey through the corridors of innovation."
-                            </div>
-                            <div>
-                                We warmly appreciate your visit and support.
-                            </div>
+                            <div>We warmly appreciate your visit and support.</div>
                         </div>
                         <div className="box1-end">
-                            <a href="https://facebook.com" target="_blank"><i className="fa-brands fa-square-facebook fa-2x"
-                                style="color: #1877F2;"></i></a>
-                            <a href="https://instagram.com" target="_blank"><i className="fa-brands fa-instagram fa-2x instagram-icon"
-                            ></i></a>
-                            <a href="https://linkedin.com" target="_blank"><i className="fa-brands fa-linkedin fa-2x"
-                                style="color: #0077B5;"></i></a>
+                            <a href="https://facebook.com" target="_blank">
+                                <i
+                                    className="fa-brands fa-square-facebook fa-2x"
+                                    style={{ color: "#4267B2" }}
+                                />
+                            </a>
+                            <a href="https://instagram.com" target="_blank">
+                                <i className="fa-brands fa-instagram fa-2x instagram-icon" />
+                            </a>
+                            <a href="https://linkedin.com" target="_blank">
+                                <i
+                                    className="fa-brands fa-linkedin fa-2x"
+                                    style={{ color: "#0077B5" }}
+                                />
+                            </a>
                         </div>
                     </div>
                     <div className="box">
-                        <div className="box25-title">
-                            QUICK LINKS
-                        </div>
+                        <div className="box25-title">QUICK LINKS</div>
                         <ul className="box25-content">
-                            <li><a href="#">IEEE.ORG</a></li>
-                            <li><a href="#">IEEE XTREME</a></li>
-                            <li><a href="#">IEEE Xplore</a></li>
-                            <li><a href="#">IEEE</a></li>
+                            <li>
+                                <a href="#">IEEE.ORG</a>
+                            </li>
+                            <li>
+                                <a href="#">IEEE XTREME</a>
+                            </li>
+                            <li>
+                                <a href="#">IEEE Xplore</a>
+                            </li>
+                            <li>
+                                <a href="#">IEEE</a>
+                            </li>
                         </ul>
                     </div>
                     <div className="box">
-                        <div className="box25-title">
-                            MEMBERSHIPS
-                        </div>
+                        <div className="box25-title">MEMBERSHIPS</div>
                         <ul className="box25-content">
-                            <li><a href="#">Join IEEE</a></li>
-                            <li><a href="#">Join a Society</a></li>
-                            <li><a href="#">Renew Membership</a></li>
-                            <li><a href="#">Info</a></li>
+                            <li>
+                                <a href="#">Join IEEE</a>
+                            </li>
+                            <li>
+                                <a href="#">Join a Society</a>
+                            </li>
+                            <li>
+                                <a href="#">Renew Membership</a>
+                            </li>
+                            <li>
+                                <a href="#">Info</a>
+                            </li>
                         </ul>
                     </div>
                     <div className="box">
-                        <div className="box25-title">
-                            SOCIETIES
-                        </div>
+                        <div className="box25-title">SOCIETIES</div>
                         <ul className="box25-content box4-content">
                             <li>CASS</li>
                             <li>ComSoc</li>
@@ -72,9 +86,7 @@ const footer = () => {
                         </ul>
                     </div>
                     <div className="box box5">
-                        <div className="box25-title">
-                            AFFINITY AND SPECIAL INTEREST GROUP
-                        </div>
+                        <div className="box25-title">AFFINITY AND SPECIAL INTEREST GROUP</div>
                         <ul className="box25-content">
                             <li>WIE</li>
                             <li>SIGHT</li>
@@ -83,12 +95,8 @@ const footer = () => {
                 </div>
             </div>
             <div className="bottom">
-                <div className="bottom-line">
-
-                </div>
-                <div className="bottom-content">
-                    &copy; Copyright 2025 IEEE SB NITC
-                </div>
+                <div className="bottom-line"></div>
+                <div className="bottom-content">© Copyright 2025 IEEE SB NITC</div>
             </div>
         </footer>
     );

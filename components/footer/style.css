@@ -45,16 +45,17 @@ footer{
     gap: 30px;
 }
 
-.box1-title{
-    font-weight: 800;
-    font-size: 30px;
-    background: linear-gradient(45deg, #ff2dce, #0051ff);
+.box1-span-title{
+    font-weight: 700;
+    font-size: 45px;
+    background: linear-gradient(90deg, #DA78C0 0%, #559CFF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .box1-content{
     font-size: 18px;
+    font-weight: 300;
 }
 
 .box1-end{
@@ -64,7 +65,7 @@ footer{
 }
 
 .instagram-icon{
-    background: linear-gradient(45deg, #fccc63, #e1306c, #833ab4);
+    background: linear-gradient(180deg, #D62976 0%, #962FBF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
