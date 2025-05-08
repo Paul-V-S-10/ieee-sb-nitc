@@ -100,3 +100,104 @@
   flex-basis: 100%;
   margin: 0px;
 }
+
+@media (width<=768px) {
+  .section {
+    height: fit-content;
+    min-width: 90vw;
+    padding: 1.25rem;
+    padding-right: 0rem;
+    border-radius: 1.5rem;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 0.75rem;
+    overflow: hidden;
+  }
+
+  .left {
+    width: 42%;
+    min-width: 0;
+    flex-shrink: 0;
+    margin: 0;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .section h2 {
+    font-size: 1rem;
+    position: static;
+    margin: 0 0rem 6rem 1rem;
+    white-space: normal;
+    word-wrap: break-word;
+    transform: translateY(25px);
+  }
+
+  .section h6 {
+    font-size: 0.6rem;
+    margin: 0;
+    max-width: 100%;
+    line-height: 1.4;
+    font-weight: 500;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+
+  .right {
+    width: 58%;
+    min-width: 0;
+    padding-right: 0.5rem;
+    gap: 0.75rem;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    align-items: stretch;
+  }
+
+  .box {
+    flex: 0 0 85%;
+    min-width: 230px;
+    max-width: 280px;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    padding-top: .2rem;
+    margin-right: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0rem;
+  }
+
+  .box h3 {
+    flex: 1;
+    font-size: 0.8rem;
+    margin: 0;
+    white-space: nowrap;
+    align-self: flex-end;
+    margin-bottom: .25rem;
+    text-overflow: ellipsis;
+    min-width: 0;
+    order: 1;
+  }
+
+  .image {
+    width: 60px;
+    height: 60px;
+    flex: 0 0 auto;
+    margin: 0;
+    margin-right: .75rem;
+    order: 2;
+  }
+
+  .box p {
+    width: 100%;
+    font-size: 0.55rem;
+    line-height: 1.4;
+    margin-top: 0.5rem;
+    padding: 0;
+    order: 3;
+  }
+}

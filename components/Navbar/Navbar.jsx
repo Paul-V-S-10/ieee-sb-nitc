@@ -2,12 +2,13 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import Logo from "@/public/logo.svg";
+import NavIcon from "@/public/nav-icon.svg"
 import styles from "./Navbar.module.css";
 const Navbar = () => {
   return (
     <nav className={styles.nav}>
       <Link href="/">
-        <Image src={Logo} width="auto" height="auto" alt="ieee logo" />
+      <Image className={styles.logo} src={Logo} width="auto" height="auto" alt="ieee logo" />
       </Link>
 
       <ul className={styles.ul}>
@@ -31,6 +32,14 @@ const Navbar = () => {
         </li>
         <button className={styles.button}>Join IEEE</button>
       </ul>
+
+      <Image
+        src={NavIcon}
+        width={30}
+        height={30}
+        alt="Menu"
+        className={styles.menuIcon}
+      />
     </nav>
   );
 };

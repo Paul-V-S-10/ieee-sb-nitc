@@ -17,7 +17,13 @@ const Features = () => {
       <div className={styles.right}>
         <div className={styles.box} id={styles.box1}>
           <h3>Global Standardization</h3>
-          <Image src={image1} width={110} height={110} alt="icon" />
+          <Image
+            src={image1}
+            className={styles.image}
+            width={110}
+            height={110}
+            alt="icon"
+          />
           <p>
             Set global standards for various technological domains. It develops
             and publishes technical standards that ensure interoperability,

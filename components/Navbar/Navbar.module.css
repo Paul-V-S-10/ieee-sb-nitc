@@ -8,7 +8,7 @@
   margin: 0 auto;
 }
 
-.nav ul {
+.ul {
   display: flex;
   gap: 3rem;
   font-weight: 500;
@@ -21,8 +21,7 @@
 .button {
   min-width: 115px;
   height: 39px;
-  top: 53px;
-  left: 1271px;
+
   border-radius: 50px;
   color: white;
   background: #623280;
@@ -31,4 +30,38 @@
   font-size: larger;
   font-family: var(--inter);
   cursor: pointer;
+}
+
+
+
+.menuIcon {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+  .nav {
+    box-sizing: border-box;
+    padding: .75rem 0rem .75rem 1rem; 
+    max-width: 100vw;     
+  }
+
+  .ul {
+    display: none; 
+  }
+
+  .menuIcon {
+    position: relative;
+    right: 2rem;
+    display: block;
+    width: 30px; 
+    height: 30px;
+    cursor: pointer;
+  }
+
+
+  .nav img {
+    max-width: 140px;  
+    height: auto;
+  }
 }

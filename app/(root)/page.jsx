@@ -23,10 +23,10 @@ const page = () => {
 
         <div className={styles.card}>
           <p>
-            IEEE SB NITC strives to
+            IEEE SB NITC strives to{' '}
             <strong>
               foster innovation, knowledge-sharing and professional growth
-            </strong>
+            </strong>{' '}
             among its members. Through our events, we provide a platform for
             students to explore emerging technologies, expand their network and
             develop crucial skills. Join us as we embark on this exciting
