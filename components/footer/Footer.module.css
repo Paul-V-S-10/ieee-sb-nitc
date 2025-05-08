@@ -13,12 +13,26 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    gap: 30px;
+}
+
+@media (max-width: 440px){
+    .top{
+        gap: 10px;
+    }
 }
 
 .bottom{
+    margin-top: 90px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+
+@media (max-width: 440px){
+    .bottom{
+        margin-top: 60px;
+    }
 }
 
 .top-line{
@@ -28,29 +42,17 @@
 .top-content{
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    padding: 20px;
     flex-wrap: wrap;
-    gap: 30px;
-}
-
-@media (max-width: 440px){
-    .top-content{
-        gap: 50px;
-    }
+    gap: 50px;
 }
 
 .box{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 20px;
+    gap: 25px;
     width: 170px;
-}
-
-@media (max-width: 440px){
-    .box{
-        gap: 25px;
-    }
 }
 
 .box1{
@@ -95,15 +97,15 @@
     }
 }
 
-.box4-content{
-    flex-wrap: wrap;
-    height: 150px;
+.instagram-icon{
+    background: linear-gradient(180deg, #D62976 0%, #962FBF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-@media (max-width: 440px){
-    .box4-content{
-        height: 180px;
-    }
+.box4-content{
+    flex-wrap: wrap;
+    height: 180px;
 }
 
 .box25-title{
@@ -117,13 +119,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    gap: 15px;
-}
-
-@media (max-width: 440px){
-    .box25-content{
-        gap: 20px;
-    }
+    gap: 20px;
 }
 
 .box a{
