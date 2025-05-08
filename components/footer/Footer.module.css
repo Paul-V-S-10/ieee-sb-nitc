@@ -3,9 +3,8 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
-    background-color: black;
     color: white;
-    font-family: sans-serif;
+    font-family: Geist;
     text-align: left;
 }
 
@@ -139,12 +138,6 @@
     }
 }
 
-.instagram-icon{
-    background: linear-gradient(180deg, #D62976 0%, #962FBF 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 .box4-content{
     flex-wrap: wrap;
     height: 180px;
@@ -161,7 +154,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    gap: 20px;
+    gap: 18px;
 }
 
 .box a{
