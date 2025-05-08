@@ -1,5 +1,8 @@
 import React from "react";
 import styles from "./Footer.module.css";
+import image1 from "@/public/facebook-icon.svg";
+import image2 from "@/public/instagram-icon.svg";
+import image3 from "@/public/linkedin-icon.svg";
 
 const Footer = () => {
     return (
@@ -21,19 +24,13 @@ const Footer = () => {
                         </div>
                         <div className={styles.box1-end}>
                             <a href="https://facebook.com" target="_blank">
-                                <i
-                                    className={`${styles.fa-brands} ${styles.fa-square-facebook} ${styles.fa-2x}`}
-                                    style={{ color: "#4267B2" }}
-                                />
+                                <img src={image1} alt="icon" />
                             </a>
                             <a href="https://instagram.com" target="_blank">
-                                <i className={`${styles.fa-brands} ${styles.fa-instagram} ${styles.fa-2x} ${styles.instagram-icon}`} />
+                                <img src={image2} alt="icon" />
                             </a>
                             <a href="https://linkedin.com" target="_blank">
-                                <i
-                                    className={`${styles.fa-brands} ${styles.fa-linkedin} ${styles.fa-2x}`}
-                                    style={{ color: "#0077B5" }}
-                                />
+                                <img src={image3} alt="icon" />
                             </a>
                         </div>
                     </div>

@@ -95,12 +95,6 @@
     }
 }
 
-.instagram-icon{
-    background: linear-gradient(180deg, #D62976 0%, #962FBF 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 .box4-content{
     flex-wrap: wrap;
     height: 150px;
