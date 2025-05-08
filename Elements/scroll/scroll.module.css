@@ -1,0 +1,28 @@
+
+.slide img{
+    height: 55px;
+    margin: 0 20px;
+}
+.slide {
+    
+    animation: 7s slide infinite linear;
+    display: inline-block;
+}
+.logos{
+    overflow: hidden;
+    padding: 20px 0 ;
+    
+    white-space: nowrap;
+}
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }to{
+        transform:translateX(-100%) ;
+    }
+}
+@media (max-width : 440px){
+    .slide img{
+        height: 40px;
+    }
+}
