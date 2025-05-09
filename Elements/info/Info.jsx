@@ -1,13 +1,14 @@
 
 import React from "react";
 import styles from "./info.module.css";
-import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css";
+
 
 const Info = ()=>{
     return(
         <>
-        <h1>Our Legacy of Impact</h1>
-        <br></br>
+        <div className={styles.heading}>
+            <h1>Our Legacy of Impact</h1>
+        </div>
     <div className={styles.container}>
         
         <div className={styles.outer}>

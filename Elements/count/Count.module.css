@@ -1,7 +1,4 @@
-*{
-    font-family: sans-serif;
-    
-}
+
 .outer {
     display: flex;
     flex-wrap: wrap;
@@ -11,6 +8,7 @@
     column-gap: 2%;
     padding: 10px;
     color: white;
+    font-family: sans-serif;
   }
 
   .inner {
