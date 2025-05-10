@@ -1,7 +1,7 @@
 
 import React from "react";
 import styles from "./info.module.css";
-
+import { FaArrowRight } from "react-icons/fa6";
 
 const Info = ()=>{
     return(
@@ -26,7 +26,7 @@ const Info = ()=>{
         
     </div>
     
-    <button className={styles.button}>See more <i className="fa-solid fa-arrow-right"></i></button>
+    <button className={styles.button}>See more <FaArrowRight /></button>
     </>
     )
 };

@@ -27,6 +27,8 @@
     text-align: center;
     color: white;
     margin: 1rem 0;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 
@@ -103,7 +105,7 @@
     .img {
         aspect-ratio: 1 / 1;
         height: auto;
-        width: 70%;
+        width: 80%;
         flex-shrink: 0;
         border-radius: 30px;
         margin-left: 0;
@@ -115,5 +117,10 @@
     }
     .button{
         border-radius: 20px;
+    }
+}
+@media(max-width: 500px){
+    .heading{
+        margin-top: 7rem;
     }
 }
