@@ -136,11 +136,157 @@
   }
 }
 
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .background {
+    width: 100vw;
+    min-height: 280vh;
+    overflow-x: hidden;
+    position: absolute;
+  }
+
+  .image1 {
+    width: 100vw;
+    min-height: 210vh;
+    background-position: center top;
+    background-size: 85% auto;
+    top: 0;
+    left: 0vw;
+    position: relative;
+    transform: rotate(-1deg);
+    background-repeat: no-repeat;
+    opacity: 0.9;
+  }
+
+  .image2 {
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: 200vh;
+    /* left: -20vw; */
+    z-index: -1;
+    opacity: 0.9;
+    transform: none;
+  }
+
+  .main {
+    height: 40vh;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+  }
+
+  .main h1,
+  .main h1 span {
+    font-size: 3.8rem;
+  }
+
+  .main p {
+    font-size: 1.2rem;
+    margin-top: 0.75rem;
+  }
+
+  .card {
+    max-width: 85%;
+    padding: 1.25rem 1.5rem;
+    border-radius: 35px;
+  }
+
+  .card p {
+    font-size: 1rem;
+    line-height: 135%;
+  }
+
+  .card button {
+    padding: 0.8rem 2.25rem;
+    border-radius: 30px;
+    font-size: 1.05rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .background {
+    width: 100vw;
+    min-height: 290vh;
+    overflow-x: hidden;
+    position: absolute;
+  }
+
+  .image1 {
+    width: 200vw;
+    min-height: auto;
+    background-position: center top;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    top: 60px;
+    left: -80px;
+    position: relative;
+    transform: rotate(-1.8deg);
+    opacity: 0.8;
+  }
+
+  .image2 {
+    width: 120vw;
+    min-height: 120vh;
+    background-position: center top;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    top: 200vh;
+    left: -10vw;
+    z-index: -1;
+    opacity: 0.8;
+    position: absolute;
+    transform: rotate(-0.6deg);
+  }
+
+  .main {
+    right: 0;
+    height: 35vh;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .main h1 {
+    font-size: 3.5rem;
+  }
+
+  .main h1 span {
+    font-size: 3.5rem;
+  }
+
+  .main p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .card {
+    max-width: 85%;
+    padding: 1rem 1.25rem;
+    border-radius: 30px;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+    line-height: 130%;
+  }
+
+  .card button {
+    padding: 0.75rem 2rem;
+    border-radius: 25px;
+    font-size: 1rem;
+  }
+}
+
+
 @media (width<=768px) {
   .background {
     min-height: 280vh;
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
     position: absolute;
   }
 
