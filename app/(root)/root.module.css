@@ -58,7 +58,7 @@
 
 .main h1 {
   font-weight: 700;
-  font-family: var(--montserrat);
+  font-family: var(--Montserrat);
   color: white;
   animation: translate 0.5s ease;
   margin: 1.5rem 0rem;
@@ -71,7 +71,7 @@
 }
 
 .main h1 span {
-  font-family: var(--montserrat);
+  font-family: var(--Montserrat);
   font-weight: 700;
   font-size: 64px;
   line-height: 100%;
@@ -138,37 +138,39 @@
 
 @media (min-width: 1025px) and (max-width: 1280px) {
   .background {
-    width: 100vw;
-    min-height: 280vh;
-    overflow-x: hidden;
+    width: 100%;
+    min-height: 400vh;
+    overflow: hidden;
     position: absolute;
   }
 
   .image1 {
-    width: 100vw;
-    min-height: 210vh;
+    width: 160vw;
+    min-height: 240vh;
     background-position: center top;
-    background-size: 85% auto;
-    top: 0;
-    left: 0vw;
+    background-size: 60% auto;
+    top: -20px;
+    left: -30vw;
     position: relative;
     transform: rotate(-1deg);
     background-repeat: no-repeat;
     opacity: 0.9;
+    overflow: hidden;
   }
 
   .image2 {
-    width: 100vw;
-    height: auto;
-    object-fit: cover;
-    background-position: center;
-    background-size: 100%;
+    width: 140vw;
+    min-height: 200vh;
+    background-position: center top;
+    background-size: 75% auto;
     background-repeat: no-repeat;
-    top: 200vh;
-    /* left: -20vw; */
+    top: 230vh;
+    left: -20vw;
     z-index: -1;
     opacity: 0.9;
-    transform: none;
+    position: absolute;
+    transform: rotate(-0.6deg);
+    overflow: hidden;
   }
 
   .main {
@@ -176,7 +178,8 @@
     right: 0;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
   }
 
   .main h1,
@@ -209,33 +212,33 @@
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .background {
-    width: 100vw;
-    min-height: 290vh;
-    overflow-x: hidden;
+    width: 100%;
+    min-height: 300vh;
+    overflow: hidden;
     position: absolute;
   }
 
   .image1 {
-    width: 200vw;
-    min-height: auto;
+    width: 170vw;
+    min-height: 180vh;
     background-position: center top;
-    background-size: 100% auto;
+    background-size: 70% auto;
     background-repeat: no-repeat;
-    top: 60px;
-    left: -80px;
+    top: 20px;
+    left: -30vw;
     position: relative;
     transform: rotate(-1.8deg);
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   .image2 {
-    width: 120vw;
-    min-height: 120vh;
+    width: 170vw;
+    min-height: 160vh;
     background-position: center top;
-    background-size: 100% auto;
+    background-size: 70% auto;
     background-repeat: no-repeat;
-    top: 200vh;
-    left: -10vw;
+    top: 150vh; 
+    left: -35vw;
     z-index: -1;
     opacity: 0.8;
     position: absolute;
@@ -352,7 +355,7 @@ background-repeat: no-repeat;
   }
   .card {
     padding: 0.75rem 1rem;
-    min-width: 85vw;
+    min-width: 80vw;
     border-radius: 20px;
     border-width: 1px;
   }
