@@ -1,0 +1,126 @@
+
+.container {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    font-family: sans-serif;
+}
+
+.outer {
+    width: 80%;
+   
+    background: linear-gradient(to right, rgb(71, 69, 69), rgb(54, 15, 54));
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid white;
+    padding: 1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+
+.heading {
+    text-align: center;
+    color: white;
+    margin: 1rem 0;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.img {
+    flex: 1 1 300px;
+    height: 100%;
+    background-image: url("/image.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+
+
+.info {
+    flex: 1 1 300px;
+    color: white;
+    font-size: larger;
+    text-align: justify;
+    margin-right: 30px;
+    overflow-wrap: break-word;
+    font-size: larger;
+    letter-spacing: 2px;
+    line-height: 1.4;
+}
+
+
+.button {
+    display: block;
+    margin: 1.5rem auto 0;
+    font-size: large;
+    padding: 10px 20px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    border: 3px solid rgb(105, 15, 105);
+    cursor: pointer;
+    transition: back ease.3s ease;
+}
+
+.button:hover {
+    animation: back ease 1s 1 forwards;
+}
+.button i{
+    background: transparent;
+}
+
+@keyframes back {
+    from {
+        background-color: black;
+    }
+    to {
+        background: linear-gradient(to right, rgb(150, 5, 150), rgb(244, 138, 244), rgb(147, 5, 147));
+    }
+}
+
+  
+
+@media (max-width: 930px) {
+    .outer {
+        flex-direction: column;
+        align-items: center;
+        border-radius: 30px;
+        background: linear-gradient(to bottom right, rgb(63, 60, 60), rgb(84, 40, 84));
+    }
+    
+
+    .img, .info {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .img {
+        aspect-ratio: 1 / 1;
+        height: auto;
+        width: 80%;
+        flex-shrink: 0;
+        border-radius: 30px;
+        margin-left: 0;
+    }
+
+    .info {
+        font-size: medium;
+        margin-right: auto;
+    }
+    .button{
+        border-radius: 20px;
+    }
+}
+@media(max-width: 500px){
+    .heading{
+        margin-top: 7rem;
+    }
+}

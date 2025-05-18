@@ -6,6 +6,10 @@
     color: white;
     font-family: Geist;
     text-align: left;
+    z-index: 2;
+    background-color: transparent;
+    margin-top: 270%;
+    max-width: 100vw;
 }
 
 .top{
