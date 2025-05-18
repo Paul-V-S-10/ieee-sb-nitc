@@ -1,0 +1,171 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+    font-family: Geist;
+    text-align: left;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+@media (max-width: 440px){
+    .top{
+        gap: 10px;
+    }
+}
+
+.bottom{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+@media (max-width: 440px){
+    .bottom{
+        margin-top: 60px;
+    }
+}
+
+.top-line{
+    border: 1px solid #5F2E7F;
+}
+
+.top-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+@media (max-width: 1260px){
+    .top-content{
+        flex-direction: column;
+    }
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 25px;
+    width: 170px;
+}
+
+@media (min-width: 750px) and (max-width: 1260px){
+    .box{
+        width: 700px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 749px){
+    .box{
+        width: 530px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 599px){
+    .box{
+        width: 420px;
+    }
+}
+
+.box1{
+    width: 300px;
+    gap: 30px;
+}
+
+@media (min-width: 750px) and (max-width: 1260px){
+    .box1{
+        width: 700px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 749px){
+    .box1{
+        width: 530px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 599px){
+    .box1{
+        width: 420px;
+    }
+}
+
+.box1-span-title{
+    font-weight: 700;
+    font-size: 45px;
+    background: linear-gradient(90deg, #DA78C0 0%, #559CFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 440px){
+    .box1-span-title{
+        font-size: 30px;
+    }
+}
+
+.box1-content{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+@media (max-width: 440px){
+    .box1-content{
+        font-size: 12px;
+    }
+}
+
+.box1-end{
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+@media (max-width: 440px){
+    .box1-end{
+        justify-content: center;
+    }
+}
+
+.box4-content{
+    flex-wrap: wrap;
+    height: 180px;
+}
+
+.box25-title{
+    font-size: 18px;
+}
+
+.box25-content{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 18px;
+}
+
+.box a{
+    color: white;
+}
+
+.bottom-line{
+    border: 1px solid #9C6572;
+}
+
+.bottom-content{
+    text-align: center;
+    margin-top: 20px;
+}
