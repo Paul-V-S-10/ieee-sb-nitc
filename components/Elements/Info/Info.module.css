@@ -1,3 +1,6 @@
+.Info{
+    z-index: 1;
+}
 
 .container {
     width: 100%;
@@ -26,8 +29,9 @@
 .heading {
     text-align: center;
     color: white;
-    margin: 1rem 0;
-    margin-top: 2rem;
+    margin: 3rem 0;
+    font-size: 3rem;
+    font-weight: 600;
     margin-bottom: 1.5rem;
 }
 
@@ -47,6 +51,7 @@
     flex: 1 1 300px;
     color: white;
     font-size: larger;
+    font-family: var(--Montserrat);
     text-align: justify;
     margin-right: 30px;
     overflow-wrap: break-word;
@@ -54,7 +59,6 @@
     letter-spacing: 2px;
     line-height: 1.4;
 }
-
 
 .button {
     display: block;

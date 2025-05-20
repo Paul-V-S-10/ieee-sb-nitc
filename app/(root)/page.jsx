@@ -1,7 +1,9 @@
 import React from "react";
-import Features from "../../components/Features/Features";
+import Features from "@/components/Features/Features";
 import styles from "./root.module.css";
-
+import Count from "@/components/Elements/Count/Count"
+import Scroll from "@/components/Elements/Scroll/Scroll"
+import Info from "@/components/Elements/Info/Info"
 const page = () => {
   return (
     <div className={styles.root}>
@@ -36,6 +38,9 @@ const page = () => {
         </div>
       </div>
       <Features />
+      <Scroll />
+      <Count />
+      <Info />
     </div>
   );
 };

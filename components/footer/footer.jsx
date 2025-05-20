@@ -2,9 +2,9 @@ import React from "react";
 import styles from "./Footer.module.css";
 import Image from "next/image";
 
-const Footer = () => {
+const Footer = ({fullHeight}) => {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} style={{ top: `${fullHeight}px` }}>
       <div className={styles.top}>
         <div className={styles["top-line"]}></div>
         <div className={styles["top-content"]}>

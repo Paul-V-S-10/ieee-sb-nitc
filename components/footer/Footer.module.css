@@ -4,12 +4,13 @@
     justify-content: space-between;
     padding: 20px;
     color: white;
-    font-family: Geist;
+    font-family: var(--geist);
     text-align: left;
     z-index: 2;
     background-color: transparent;
-    margin-top: 270%;
+    position: absolute;
     max-width: 100vw;
+    width: 100%;
 }
 
 .top{

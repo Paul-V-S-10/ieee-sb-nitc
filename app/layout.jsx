@@ -1,18 +1,17 @@
-import { Metadata } from "next";
 import { Geist, Geist_Mono, Inter, Montserrat } from "next/font/google";
 import "./globals.css";
+import { Metadata } from "next";
 import Navbar from "@/components/Navbar/Navbar";
-import Footer from "@/components/footer/footer"
+import Footer from "@/components/Footer/Footer";
+import ContentWrapper from "@/components/ContentWrapper/ContentWrapper";
+
 const geistSans = Geist({
-  variable: "--font-geist-sans",
+  variable: "--geist",
   subsets: ["latin"],
 });
 
 const inter = Inter({ variable: "--Inter", subsets: ["latin"] });
-const montserrat = Montserrat({
-  variable: "--Montserrat",
-  subsets: ["latin"],
-});
+const montserrat = Montserrat({ variable: "--Montserrat", subsets: ["latin"] });
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
@@ -30,8 +29,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} antialiased`}
       >
         <Navbar />
-        <main className="mainContent">{children}</main>
-        <Footer />
+        <ContentWrapper>{children}</ContentWrapper>
       </body>
     </html>
   );
