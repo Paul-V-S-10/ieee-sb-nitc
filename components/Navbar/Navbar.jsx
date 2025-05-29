@@ -2,7 +2,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
-import Logo from "@/public/logo.svg";
+import Logo from "@/public/Logos/IEEE SB40.png";
 import NavIcon from "@/public/nav-icon.svg";
 import CloseIcon from "@/public/nav-close-icon.svg"; 
 import styles from "./Navbar.module.css";
@@ -18,7 +18,7 @@ const Navbar = () => {
     <>
       <nav className={styles.nav}>
         <Link href="/">
-          <Image className={styles.logo} src={Logo} width="auto" height="auto" alt="ieee logo" />
+          <Image className={styles.logo} src={Logo} width="210" height="auto" alt="ieee logo" />
         </Link>
 
         <ul className={styles.ul}>

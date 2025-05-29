@@ -2,12 +2,13 @@
     font-family: sans-serif;
     margin: 0 auto;
     padding: 25px;
-    max-width: 60vw;
-    min-width: 400px;
+    max-width: 80%;
+    min-width: 320px;
     z-index: 1;
     text-align: center;
-  }
-  .mango {
+}
+
+.heading {
     color: #ffffff;
     width: 499px;
     /* height: 98px; */
@@ -16,114 +17,89 @@
     font-family: Geist;
     font-weight: 700;
     font-size: 45px;
-    line-height: 100%;
-    letter-spacing: 0%;
     text-align: left;
     vertical-align: left;
-  }
-      
-  .heading {
-    text-align: left;
-    font-size: 2em;
-    color: #2d3436;
-    margin: 20px 0 30px;
-  }
-  
-  
-  .ak {
+}
+.ak {
+    width: 70%;
+    margin: 0 auto;
     display: grid;
-    gap: 150px;
+    gap: 450px;
     grid-auto-flow: column;
-    /* grid-auto-columns: 70%; */
     overflow-x: auto;
-
     overscroll-behavior-inline: contain;
+    align-items: center;
+    padding: 0 2rem;
+}
 
-    /* width: 550.0970458984375px; */
-    top: 1585.04px;
-    left: 390px;
-    border-width: 1px;
-    align-items:center;
-  }
+.ak::-webkit-scrollbar {
+    width: 1em;
+    height: 1em;
+}
 
-  .ak::-webkit-scrollbar {
-  width: 1em;
-  height: 1em;
-  }
-
-  .ak::-webkit-scrollbar-track {
+.ak::-webkit-scrollbar-track {
     background: hsl(120, 25%, 94%);
     border-radius: 100vw;
     margin-block: 0.5em;
-  }
+}
 
-  .ak::-webkit-scrollbar-thumb {
+.ak::-webkit-scrollbar-thumb {
     background: hsl(120, 4%, 5%);
     border: 0.25em solid hsl(120, 24%, 6%);
     border-radius: 100vw;
-  }
+}
 
-  .ak::-webkit-scrollbar-thumb:hover {
+.ak::-webkit-scrollbar-thumb:hover {
     background: hsl(120, 2%, 12%);
-  }
-  .card{
-    border-radius: 25px;
+}
+.card {
+    width: fit-content;
+    border-radius: 20px;
     position: relative;
-    padding: 29px 15px;
     margin: 50px 0;
-    height: 469px;
-    width: 316px;
-    background: #04020563;
-    box-shadow: 0 2px 5px #ffffff;
-  }
-  
-  .top {
-    border-radius: 25px 25px 0 0;
-    height: 200px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid #999999;
+    overflow: hidden;
+    padding: 0;
+}
+
+.top {
+    height: 55%;
     width: 100%;
     position: relative;
-    top: 0;
-    left: 40px;
+    border-bottom: 1px solid #999999;
     display: flex;
-  }
-  
-  .name {
-    font-size: 2em;
+    align-items: center;
+    justify-content: center;
+}
+
+.name {
+    font-family: var(--geist);
+    font-size: 1.5rem;
     color: #ffffff;
-    display: flex;
-    flex: 1;
-    margin: 10% 20px 0;
-  }
-  
-  .card img {
-    margin: 30px 20px 0 0;
-  }
-  
-  .circle-img {
-    border-radius: 0%;
-    border: 1px solid #fff;
-    width: 218px;
-    height: 232px;
-    top: 1086px;
-    left: 432px;
-  }
-  .bottom {
-    width: 319px;
-    top: 1332.5px;
-    left: 379px;
-    border-width: 1px;
-    border: 1px solid #ffffff;
-  }
-  .event-details {
-    width: 316px;
-    /* width: 316;
-  height: 469;
-  top: 1074px;
-  left: 379px;
-  border-radius: 20px;
-  border-width: 1px; */
-  }
-  .event-title {
+    font-weight: 700;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.circle-img {
+    height: 90%;
+    width: 80%;
+    margin: 0.75rem 2.5rem 0.75rem;
+    object-fit: cover;
+    min-width: 220px;
+    min-height: 230px;
+}
+
+.event-details {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 1.5rem;
+    margin-bottom: 1rem;
+}
+.event-title {
     font-family: Geist;
     font-weight: 700;
     font-size: 17px;
@@ -136,81 +112,121 @@
     top: 1349px;
     left: 401.78px;
     text-align: left;
-  }
-  .detail-item {
+}
+.detail-item {
+    /* margin-left: 1rem; */
     color: #ffffff;
-    width: 100.1509246826172px;
-    height: 26.64768409729004px;
-    top: 1398px;
-    left: 391px;
+    min-width: 100px;
+    min-height: 26px;
     font-family: Geist;
+    display: flex;
+    align-self: flex-start;
     font-weight: 300;
     font-size: 12px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-align: center;
-    vertical-align: middle;
-  }
-  .detail-item1 {
-    width: 131.1509246826172px;
-    height: 26.64768409729004px;
-    top: 1422px;
-    left: 410px;
-    font-family: Geist;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-align: center;
-    vertical-align: middle;
-    color: #ffffff;
-  }
-  .bottom {
-    margin-top: 80px;
-  }
-  
-  .info {
+}
+
+.detail-item :nth-child(2) {
+    margin-left: 0.5rem;
+}
+.info {
     margin: 20px 0;
     color: #ffffff;
-  }
-  .register-button {
-    width: 253px;
+}
+.register-button {
+    margin-top: 1rem;
+    width: 100%;
     height: 53px;
-    top: 1469px;
-    left: 409px;
     border-radius: 30px;
     background-color: #e0e0e0;
-  }
-  .register-text {
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5rem;
+    position: relative;
+}
+
+.register-text {
     font-family: Inter;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    vertical-align: middle;
-    width: 92px;
-    height: 52px;
-    top: 1470px;
-    left: 899px;
+    font-size: 13px;
     color: #000000;
+    flex: 1;
+    position: absolute;
+    left: 30%;
+}
 
-  }
-  .tiqr {
-    width: 50px;
-    height: 15px;
-  }
-  .register-button:hover {
-    background-color: #e0e0e0;
-  }
-  
-  .logo {
+.tiqr {
+    position: absolute;
+    left: 53%;
+    height: 55px;
+    width: auto;
+    object-fit: contain;
+}
+
+.register-button:hover {
+    background-color: #d0d0d0;
+    transition: background-color 0.2s ease;
+}
+
+.logo {
     height: 24px;
     object-fit: contain;
-  }
-  
-  .button-logo-placeholder {
+}
+
+.button-logo-placeholder {
     width: 91;
     height: 52;
     top: 1469px;
     left: 533px;
-  }
+}
+
+@media screen and (max-width: 768px) {
+    .body {
+        overflow: hidden;
+        max-width: 100vw;
+        padding: 20px;
+    }
+    .ak {
+        width: 85%;
+        display: grid;
+        grid-auto-flow: column;
+        gap: 300px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding: 1rem;
+    }
+    .card {
+        scroll-snap-align: start;
+        width: 300px;
+        margin: 0;
+    }
+    .heading {
+        margin: 2rem auto;
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .body {
+        padding: 15px;
+        max-width: 70%;
+    }
+    .ak {
+        gap: 200px;
+        padding: 0.5rem;
+    }
+    .card {
+        width: 280px;
+    }
+    .heading {
+        display: inline;
+        font-size: 32px;
+        margin: 2rem auto;
+    }
+    .circle-img {
+        min-width: 200px;
+        min-height: 200px;
+    }
+}
