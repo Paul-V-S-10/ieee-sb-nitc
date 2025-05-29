@@ -1,5 +1,6 @@
 import React from "react";
 import Features from "@/components/Features/Features";
+import Slider from "@/components/Slider/Slider";
 import styles from "./root.module.css";
 import Count from "@/components/Elements/Count/Count"
 import Scroll from "@/components/Elements/Scroll/Scroll"
@@ -37,6 +38,7 @@ const page = () => {
           <button>About Us</button>
         </div>
       </div>
+      <Slider/>
       <Features />
       <Scroll />
       <Count />

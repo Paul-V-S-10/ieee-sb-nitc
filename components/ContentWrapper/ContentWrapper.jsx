@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Footer from "@/components/Footer/Footer";
+import Footer from "@/components/footer/footer";
 
 export default function ContentWrapper({ children }) {
   const [pageHeight, setPageHeight] = useState(0);
