@@ -6,28 +6,30 @@ const Scroll = () => {
     <div className={styles.Scroll}>
       <div className={styles.logos}>
         <div className={styles.slide}>
-          <img src="/IEEE CAS_MB Lockup WHITE RGB_300ppi.png"></img>
+          <img src="/Logos/IEEE.png"></img>
+          <img src="/Logos/IEEE CAS.png"></img>
           <img src="/IEEE ComSoc_MB Lockup WHITE RGB_300ppi.png"></img>
-          <img src="/IEEE Control Systems Society Logo White RGB.png"></img>
-          <img src="/IEEE SPS_MB Lockup WHITE RGB_300ppi.png"></img>
-          <img src="/IEEE RAS MB Lockup WHITE RGB_300ppi.png"></img>
-          <img src="/IEEE NPSS Logo WHITE.png"></img>
-          <img src="/IEEE IAS_MB Lockup WHITE RGB_300ppi.png"></img>
-          <img src="/IEEE EDS_MB Lockup WHITE RGB 300ppi.png"></img>
-          <img src="/IEEE EducationSoc_MB Lockup WHITE RGB_300ppi.png"></img>
-          <img src="/IEEE-CS_LogoTM-white.png"></img>
+          <img src="/Logos/IEEE CSS.png"></img>
+          <img src="/Logos/IEEE SPS.png"></img>
+          <img src="/Logos/IEEE RAS.png"></img>
+          <img src="/Logos/IEEE NPSS.png"></img>
+          <img src="/Logos/IEEE IAS.png"></img>
+          <img src="/Logos/IEEE EDS.png"></img>
+          <img src="/Logos/IEEE EDSOC.png"></img>
+          <img src="/Logos/IEEE CS.png"></img>
         </div>
         <div className={styles.slide}>
-          <img src="/IEEE CAS_MB Lockup WHITE RGB_300ppi.png"></img>
+          <img src="/Logos/IEEE.png"></img>
+          <img src="/Logos/IEEE CAS.png"></img>
           <img src="/IEEE ComSoc_MB Lockup WHITE RGB_300ppi.png"></img>
-          <img src="/IEEE Control Systems Society Logo White RGB.png"></img>
-          <img src="/IEEE SPS_MB Lockup WHITE RGB_300ppi.png"></img>
-          <img src="/IEEE RAS MB Lockup WHITE RGB_300ppi.png"></img>
-          <img src="/IEEE NPSS Logo WHITE.png"></img>
-          <img src="/IEEE IAS_MB Lockup WHITE RGB_300ppi.png"></img>
-          <img src="/IEEE EDS_MB Lockup WHITE RGB 300ppi.png"></img>
-          <img src="/IEEE EducationSoc_MB Lockup WHITE RGB_300ppi.png"></img>
-          <img src="/IEEE-CS_LogoTM-white.png"></img>
+          <img src="/Logos/IEEE CSS.png"></img>
+          <img src="/Logos/IEEE SPS.png"></img>
+          <img src="/Logos/IEEE RAS.png"></img>
+          <img src="/Logos/IEEE NPSS.png"></img>
+          <img src="/Logos/IEEE IAS.png"></img>
+          <img src="/Logos/IEEE EDS.png"></img>
+          <img src="/Logos/IEEE EDSOC.png"></img>
+          <img src="/Logos/IEEE CS.png"></img>
         </div>
       </div>
     </div>
