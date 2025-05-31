@@ -10,7 +10,7 @@
 
 .heading {
     color: #ffffff;
-    width: 499px;
+    width: fit-content;
     /* height: 98px; */
     top: 931px;
     left: 20px;

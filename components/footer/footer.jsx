@@ -2,9 +2,10 @@ import React from "react";
 import styles from "./Footer.module.css";
 import Image from "next/image";
 
-const Footer = ({fullHeight}) => {
+const Footer = () => {
+  const year = new Date().getFullYear();
   return (
-    <footer className={styles.footer} style={{ top: `${fullHeight}px` }}>
+    <footer className={styles.footer} >
       <div className={styles.top}>
         <div className={styles["top-line"]}></div>
         <div className={styles["top-content"]}>
@@ -155,7 +156,7 @@ const Footer = ({fullHeight}) => {
       <div className={styles.bottom}>
         <div className={styles["bottom-line"]}></div>
         <div className={styles["bottom-content"]}>
-          © Copyright 2025 IEEE SB NITC
+          © Copyright {year} IEEE SB NITC
         </div>
       </div>
     </footer>

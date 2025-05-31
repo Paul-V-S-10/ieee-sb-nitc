@@ -1,18 +1,19 @@
 import React from "react";
 import styles from "./Info.module.css";
 import { FaArrowRight } from "react-icons/fa6";
-
+import Image from "next/image";
+import image from "../../../public/image.png"
 const Info = () => {
   return (
     <div className={styles.Info}>
       <h1 className={styles.heading}>Our Legacy of Impact</h1>
       <div className={styles.container}>
         <div className={styles.outer}>
-          <div className={styles.img}></div>
+          <Image className={styles.img} src={image} alt="ieee-outstanding-img-poster" width="auto" height="auto"/>
           <div className={styles.info}>
-            <b>IEEE SB NITC</b> is honored to receive the{" "}
-            <b>Outstanding Student Branch Award</b> from the{" "}
-            <b>IEEE India Council</b>. This recognition reflects the collective
+            <span>IEEE SB NITC</span> is honored to receive the{" "}
+            <span>Outstanding Student Branch Award</span> from the{" "}
+            <span>IEEE India Council</span>. This recognition reflects the collective
             efforts of our members, mentors, and volunteers, who have worked
             tirelessly to create opportunities for learning, innovation, and
             community impact. From hosting diverse events to addressing societal
