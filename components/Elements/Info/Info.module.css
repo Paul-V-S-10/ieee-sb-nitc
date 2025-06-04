@@ -51,6 +51,7 @@
     color: white;
     font-size: x-large;
     font-family: var(--Montserrat);
+    font-weight: 300;
     text-align: justify;
     margin-right: 30px;
     overflow-wrap: break-word;
