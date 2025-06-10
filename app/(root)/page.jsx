@@ -5,6 +5,7 @@ import styles from "./root.module.css";
 import Count from "@/components/Elements/Count/Count"
 import Scroll from "@/components/Elements/Scroll/Scroll"
 import Info from "@/components/Elements/Info/Info"
+import Carousel from "@/components/Elements/Latest_events/event-carousel"
 const page = () => {
   return (
     <div className={styles.root}>
@@ -43,6 +44,7 @@ const page = () => {
       <Scroll />
       <Count />
       <Info />
+      <Carousel />
     </div>
   );
 };
