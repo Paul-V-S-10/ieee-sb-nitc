@@ -9,13 +9,8 @@
     min-height: 600px;
     background: transparent;
     max-width: 100vw;
-    overflow: hidden;   
+    overflow: hidden;
     box-sizing: border-box;
-}
-
-.swiper-wrapper {
-     justify-content: center; 
-    gap: 4.5rem;
 }
 
 .events-carousel-title {
@@ -23,13 +18,12 @@
     font-size: 3rem;
     font-weight: 700;
     color: #ffffff;
-    /* letter-spacing: -0.02em; */
     margin: 0;
     margin-bottom: 1.5rem;
 }
 
 .events-carousel-outer-wrapper {
-    width: 100vw;
+    width: 100%;
     position: relative;
     display: flex;
     justify-content: center;
@@ -43,9 +37,7 @@
 .events-carousel-wrapper {
     position: relative;
     width: 100%;
-    max-width: 120vw;
-    left: 50%;
-    transform: translateX(-38%);
+    max-width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,6 +50,11 @@
     position: relative;
     overflow: visible;
     padding-top: 80px;
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: flex-end;
 }
 
 .events-slide {
@@ -74,14 +71,15 @@
     background: black;
     border-radius: 15px;
     overflow: hidden;
-    min-width: 20px;
-    height: 320px;
+    width: 280px;
+    height: 364px;
     cursor: pointer;
     position: relative;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     transform-origin: center bottom;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     will-change: transform;
+    flex-shrink: 0;
 }
 
 .events-slide.swiper-slide-active .events-card {
@@ -99,8 +97,7 @@
 
 .events-card-image-container {
     width: 100%;
-    /* height: calc(100% - 40px); */
-    height: 83%;
+    height: 85%;
     overflow: hidden;
     border-radius: 20px 20px 0 0;
 }
@@ -116,10 +113,9 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    /* height: 60px; */
     box-sizing: border-box;
     background: black;
-    padding: 0.75rem 0.75rem 1.5rem;
+    padding: 0.65rem 0.75rem 1.25rem;
     border-radius: 0 0 20px 20px;
     display: flex;
     align-items: center;
@@ -140,9 +136,9 @@
     display: flex;
     justify-content: center;
     gap: 8rem;
-    /* margin-top: 0rem; */
     position: relative;
     z-index: 2;
+    margin-top: 2rem;
 }
 
 .events-nav-button {
@@ -175,8 +171,9 @@
 
 /* Responsive adjustments */
 @media (max-width: 1200px) {
-    .events-carousel-wrapper {
-        width: 110vw;
+    .events-card {
+        width: 260px;
+        height: 340px;
     }
 }
 
@@ -186,16 +183,6 @@
         min-height: 450px;
     }
 
-    .events-carousel-wrapper {
-        width: 100vw;
-        max-width: none;
-        transform: translateX(-65%);
-    }
-
-    .swiper-wrapper {
-        gap: 3.5rem;
-    }
-
     .events-carousel-container {
         padding: 1.5rem 0.5rem;
         min-height: 500px;
@@ -203,12 +190,12 @@
     }
 
     .events-carousel-title {
-        font-size: 2rem;
+        font-size: 1.75rem;
         margin-bottom: 2rem;
     }
 
     .events-card {
-        width: 200px;
+        width: 180px;
         height: 280px;
     }
 
@@ -225,15 +212,18 @@
         margin-top: 2rem;
         gap: 6rem;
     }
+
+    .events-card-title{
+        font-size: .8rem;
+    }
 }
 
 @media (max-width: 480px) {
     .events-carousel-outer-wrapper {
-        /* max-width: 100vW; */
-        padding: 0px 0 0px 0;
+        padding: 10px 0 20px 0;
         min-height: 400px;
     }
-    
+
     .events-carousel-container {
         padding: 1rem 0.5rem;
         min-height: 450px;
@@ -243,20 +233,14 @@
     .events-carousel-title {
         font-size: 1.75rem;
     }
-    
-    .swiper-wrapper {
-        justify-content: center; 
-        gap: 5.5rem;
-    }
-    
-    .events-carousel-wrapper {
-        transform: translateX(-10%);
-    }
 
     .events-card {
-        width: 180px;
-        min-height: 240px;
-        flex-shrink: 0;
+        width: 160px;
+        height: 240px;
+    }
+
+        .events-card-title-container{
+        padding: 0rem;
     }
 
     .events-slide.swiper-slide-active .events-card {
@@ -269,8 +253,8 @@
     }
 
     .events-card-title {
-        font-size: 0.8rem;
-        padding: 0.5rem 0.75rem 1rem;
+        font-size: 0.7rem;
+        padding: 0.65rem 0.75rem 1rem;
     }
 
     .events-navigation-container {
@@ -281,5 +265,28 @@
     .events-nav-button {
         width: 60px;
         height: 60px;
+    }
+}
+
+@media (max-width: 360px) {
+    .events-card {
+        width: 140px;
+        height: 220px;
+    }
+
+    .events-card-title {
+        font-size: 0.75rem;
+        padding: .4rem .75rem .75rem;
+    }
+
+
+
+    .events-navigation-container {
+        gap: 3rem;
+    }
+
+    .events-nav-button {
+        width: 50px;
+        height: 50px;
     }
 }
