@@ -14,7 +14,7 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   padding: 0 1rem;
-  margin: 2.5rem auto;
+  margin: 3rem auto;
   max-width: 1400px;
   box-sizing: border-box;
   color: white;

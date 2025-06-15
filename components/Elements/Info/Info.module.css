@@ -16,7 +16,7 @@
 .outer {
     width: 80%;
     background: linear-gradient(135deg, rgba(0, 0, 3, 0.1), rgba(0, 0, 0, 0.2));
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(15px);
     border-radius: 20px;
     display: flex;
@@ -35,7 +35,7 @@
     margin: 3rem 0;
     font-size: 3rem;
     font-weight: 600;
-    margin-bottom: 1.5rem;
+    margin-bottom: 4rem;
 }
 
 .img {
@@ -68,7 +68,7 @@
     display: block;
     margin: 1.5rem auto 0;
     font-size: large;
-    padding: 1.5rem 2.75rem;
+    padding: 1.75rem 3rem;
     color: white;
     background-color: black;
     position: relative;
@@ -108,6 +108,7 @@
 }
 .button svg {
     background: transparent;
+    transform: scale(1.5);
 }
 
 @keyframes back {

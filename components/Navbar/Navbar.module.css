@@ -27,7 +27,7 @@
   background: #623280;
   border: none;
   font-weight: 500;
-  font-size: larger;
+  font-size: 1.25rem;
   font-family: var(--inter);
   cursor: pointer;
 }
@@ -118,7 +118,7 @@
   .button {
     min-width: 100px;
     height: 36px;
-    font-size: 1rem;
+    font-size: .9rem;
   }
 
   .menuIcon {
