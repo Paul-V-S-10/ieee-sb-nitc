@@ -15,8 +15,7 @@ function Header() {
         </div>
       </div>
       <div className={styles.meet}>
-        <span className={styles.meetFirst}>MEET</span> OUR{" "}
-        <span className={styles.meetSecond}>TEAM</span>
+        MEET<span> OUR </span>TEAM
       </div>
     </div>
   );

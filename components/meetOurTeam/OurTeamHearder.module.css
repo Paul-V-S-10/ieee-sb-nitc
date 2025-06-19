@@ -51,11 +51,24 @@
 }
 
 .meet {
-  color: white;
+  /* color: white; */
   font-size: 600%;
   font-weight: 700;
+  background: linear-gradient(90deg, #be7cc9, #8e5a93, #845f8e, #6498fa);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.meetFirst {
+
+.meet span{
+  background: white;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* .meetFirst {
   display: inline-block;
   background: linear-gradient(to right, #cc89f1, rgb(125, 74, 122));
   -webkit-background-clip: text;
@@ -68,9 +81,12 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+} */
 
 @media (max-width: 650px) {
+  .header{
+    padding-top: 120px;
+  }
   .ieee {
     font-size: 500%;
   }

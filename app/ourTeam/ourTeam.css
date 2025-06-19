@@ -4,6 +4,10 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    background-color: black;
+    display: flex;
+    margin: 0px;
+    font-size: clamp(4px, 1vw, 15px);
 }
 
 .cards-grid {

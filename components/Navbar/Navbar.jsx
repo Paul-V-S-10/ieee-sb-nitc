@@ -30,7 +30,7 @@ const Navbar = () => {
           <li><Link href="/blogs">Blogs</Link></li>
           <button className={styles.button}>Join IEEE</button>
         </ul>
-
+        <Link href="/">
         <Image
           src={NavIcon}
           width={30}
@@ -38,7 +38,8 @@ const Navbar = () => {
           alt="Menu"
           className={styles.menuIcon}
           onClick={toggleSidebar}
-        />
+          />
+          </Link>
       </nav>
 
       <div className={`${styles.backdrop} ${sidebarOpen ? styles.active : ""}`} onClick={toggleSidebar}></div>
