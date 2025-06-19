@@ -1,0 +1,73 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* pushes lowerPart to bottom */
+  aspect-ratio: 0.7;
+  width: 90%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 8% 8%;
+  max-width: 600px;
+  box-sizing: border-box;
+  /* font-size: clamp(0.8rem, 1.8em, 2rem); */
+  container-type: inline-size; /* enable container query on width */
+  container-name: card;
+}
+
+.lowerPart {
+  background: linear-gradient(to right, #602a77, #e49fe6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(238, 238, 238);
+  height: 25%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.position {
+  font-size: 1em; /* responsive scaling */
+  text-align: center;
+  word-break: break-word;
+  margin: 0;
+}
+
+.name {
+  margin-top: 5px;
+  padding-bottom: 5px;
+}
+
+.profileImg {
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+  display: block;
+}
+
+@container card (width < 200px) {
+  .position {
+    font-size: 0.8rem;
+  }
+  .name {
+    font-size: 0.6rem;
+  }
+}
+
+@container card (width >= 200px) and (width < 300px) {
+  .position {
+    font-size: 1rem;
+  }
+  .name {
+    font-size: 0.8rem;
+  }
+}
+
+@container card (width >= 300px) {
+  .position {
+    font-size: 1.8rem;
+  }
+  .name {
+    font-size: 1.2rem;
+  }
+}

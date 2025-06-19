@@ -1,19 +1,26 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-body{
+/* body {
   background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  font-size: clamp(4px, 1vw, 15px);   
+  font-family: Arial, Helvetica, sans-serif;
+  } */
+  
+  body{
+    background-color: black;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
   width: 100vw;
   box-sizing: border-box;
+  min-height: 100vh;
 }
 
 a{
   color: white;
   text-decoration: none;
   cursor: pointer;
+  z-index: 1;
 }
