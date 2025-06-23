@@ -113,9 +113,15 @@
     .inner {
         min-width: 0;
         width: 100%;
-        font-size: 14px;
+        font-size: 13px;
     }
     .inner p {
         font-size: 2rem;
+    }
+}
+
+@media (max-width:370px) {
+    .inner{
+        font-size: 12px;
     }
 }
