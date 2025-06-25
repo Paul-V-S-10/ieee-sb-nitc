@@ -1,6 +1,6 @@
 // import logo from "./assets/logo.png";
 import Image from "next/image";
-import styles from "./OurTeamHearder.module.css";
+import styles from "./OurTeamHeader.module.css";
 function Header() {
   return (
     <div className={styles.header}>
