@@ -1,0 +1,97 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 2rem;
+}
+
+.glassContainer {
+    padding: 2rem 4rem;
+    border-radius: 60px;
+    background: rgba(255, 255, 255, 0.22);
+    backdrop-filter: blur(32px) saturate(160%);
+    -webkit-backdrop-filter: blur(32px) saturate(160%);
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    box-shadow: 0 12px 40px rgba(80, 40, 120, 0.25), 0 2px 8px rgba(255, 255, 255, 0.18) inset;
+    animation: fadeInGlass 1.2s ease-out;
+    transition: all 0.3s cubic-bezier(.4, 2, .6, 1);
+}
+
+.glassContainer:hover {
+    background: rgba(255, 255, 255, 0.32);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 16px 48px rgba(80, 40, 120, 0.32), 0 2px 12px rgba(255, 255, 255, 0.22) inset;
+}
+
+.comingSoonText {
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 0.15em;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+@keyframes fadeInGlass {
+    0% {
+        opacity: 0;
+        transform: translateY(20px) scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    .glassContainer {
+        padding: 1.5rem 3rem;
+        border-radius: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .glassContainer {
+        padding: 1.2rem 2rem;
+        border-radius: 40px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .glassContainer {
+        animation: none;
+    }
+    .glassContainer:hover {
+        transform: none;
+    }
+    .glassContainer {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@media (prefers-contrast: high) {
+    .glassContainer {
+        background: rgba(255, 255, 255, 0.15);
+        border-color: rgba(255, 255, 255, 0.5);
+    }
+    .comingSoonText {
+        text-shadow: none;
+    }
+}
+
+@supports not (backdrop-filter: blur(20px)) {
+    .glassContainer {
+        background: rgba(255, 255, 255, 0.15);
+    }
+}
