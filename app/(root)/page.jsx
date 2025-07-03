@@ -49,18 +49,15 @@ const page = () => {
                     <button>About Us</button>
                 </div>
             </div>
-            <Slider />
-            <Reveal>
-                <Features />
-            </Reveal>
+            <Reveal><Slider /></Reveal>
+            <Reveal><Features /></Reveal>
             <Scroll />
-            <Count />
-            <Reveal>
-                <Info />
-            </Reveal>
-            <Carousel />
-    </div>
-  );
+            <Reveal><Count /></Reveal>
+            <Reveal><Info /></Reveal>
+            <Reveal><Carousel /></Reveal>
+
+        </div>
+    );
 };
 
 export default page;

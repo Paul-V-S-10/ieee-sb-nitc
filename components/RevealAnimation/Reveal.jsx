@@ -16,7 +16,7 @@ export default function ScrollReveal({ children, className = "" }) {
             // Animation starts when top of element is at 90% of viewport (10% visible)
             // and ends when top is at 10% of viewport (almost fully visible)
             const start = windowHeight * .9; // 90% down the screen
-            const end = windowHeight * 0.1; // 10% from top
+            const end = windowHeight * 0.18; // 10% from top
 
             const progress = (start - rect.top*.5) / (start - end);
             const clamped = Math.min(Math.max(progress, 0), 1);
