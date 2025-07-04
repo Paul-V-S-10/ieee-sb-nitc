@@ -6,34 +6,34 @@ const page = () => {
     <div>
       <div className={styles.back}></div>
       <div className={styles.header}>
-        <h1>Contact Us</h1>
+        <div className={styles.infoT1}>Contact Us</div>
         <p>Get in Touch with IEEE SB NITC</p>
       </div>
 
       <div className={styles.container}>
         <div className={styles.formCardBox}>
           <div className={styles.formCard}>
-            <h2>SEND A MESSAGE</h2>
+            <div className={styles.infoT5}>SEND A MESSAGE</div>
 
             <div className={styles.row}>
               <div className={styles.inputGroup}>
-                <label className={styles.label}>Name:</label>
+                <div className={styles.infoT4}>Name:</div>
                 <input type="text" className={styles.inputNnE} />
               </div>
 
               <div className={styles.inputGroup}>
-                <label className={styles.label}>Email:</label>
+                <div className={styles.infoT4}>Email:</div>
                 <input type="email" className={styles.inputNnE} />
               </div>
             </div>
 
             <div className={styles.inputGroup}>
-              <label className={styles.label}>Subject:</label>
+              <div className={styles.infoT4}>Subject:</div>
               <input type="text" className={styles.input} />
             </div>
 
             <div className={styles.inputGroup}>
-              <label className={styles.label}>Messages:</label>
+              <div className={styles.infoT4}>Messages:</div>
               <textarea className={styles.textarea}></textarea>
             </div>
 
@@ -43,21 +43,18 @@ const page = () => {
 
         <div className={styles.contactInfo}>
           <div className={styles.contactInfoBox}>
-            <h3>Contact Information</h3>
-            <p>
-              <strong>Address</strong>
-            </p>
-            <p>
+            <div className={styles.infoT}>Contact Information</div>
+            <div className={styles.infoT2}>Address</div>
+            <div className={styles.infoT3}>
               Mukkam Road
               <br />
               Kattangal
               <br />
               Kozhikode, Kerala
-            </p>
-            <p>
-              <strong>E-mail</strong>
-            </p>
-            <p>ieeesb@nitc.ac.in</p>
+            </div>
+            <div className={styles.infoT2}>E-mail</div>
+
+            <div className={styles.infoT3}>ieeesb@nitc.ac.in</div>
           </div>
 
           <img className={styles.map} src="/nitc_map.png" alt="NITC Map" />

@@ -4,8 +4,9 @@
   position: absolute;
   left: 0;
   width: 100%;
-  height: 70%;
-  background: linear-gradient(to bottom, #623a89, rgb(169, 113, 119), black);
+  height: 60%;
+  max-height: 500px;
+  background: linear-gradient(to bottom, #46235b, rgb(169, 113, 119), black);
 
   filter: blur(20px);
   z-index: -1;
@@ -24,13 +25,14 @@
 }
 
 .header h1 {
-  font-family: Geist, sans-serif;
+  font-family: var(--geist);
   font-size: 2.5rem;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 0.5rem;
 }
 
 .header p {
+  font-family: var(--geist);
   font-size: 1rem;
   opacity: 0.8;
 }
@@ -39,6 +41,8 @@
   display: flex;
   padding: 2rem;
   color: white;
+  font-family: var(--geist);
+  font-weight: 400;
 }
 
 .formCardBox {
@@ -49,35 +53,16 @@
   max-width: 1200px;
 }
 
-.formContainer {
-  flex: 1;
-  min-width: 300px;
-  margin-right: 2rem;
-  padding: 2rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(177, 90, 255, 0.3);
-}
-
-.formContainer h2 {
-  margin-bottom: 1.5rem;
-  font-size: 1.2rem;
-}
-
 .formCard {
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 2rem;
   border-radius: 16px;
-  box-shadow: 0 0 20px rgba(177, 90, 255, 0.3);
+  box-shadow: 0 10px 20px rgba(177, 90, 255, 0.3);
   max-width: 500px;
   width: 100%;
   color: white;
-}
-
-.formCard h2 {
-  font-family: Geist, sans-serif;
-  margin-bottom: 1.5rem;
-  font-size: 1.2rem;
+  height: 90%;
+  max-height: 600px;
 }
 
 .row {
@@ -93,15 +78,9 @@
   margin-bottom: 1rem;
 }
 
-.label {
-  font-size: 0.9rem;
-  margin-bottom: 0.4rem;
-}
-
 .input,
 .inputNnE,
 .textarea {
-  font-family: Geist, sans-serif;
   padding: 0.6rem 1rem;
   border: 1px solid white;
   border-radius: 20px;
@@ -142,15 +121,6 @@
   justify-items: center;
 }
 
-.contactInfo h3 {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-}
-
-.contactInfo p {
-  margin: 0.5rem 0;
-}
-
 .contactInfoBox {
   flex: 1;
   display: flex; /* Add this */
@@ -158,17 +128,57 @@
   justify-content: space-between; /* Add this */
   height: 100%; /* Add this */
   padding-left: 20%;
+  padding-top: 30px;
 }
 
 .map {
-  margin-top: 1rem;
+  margin: 2rem;
+  max-width: 600px;
+}
+
+.infoT {
+  font-family: var(--geist);
+  font-weight: 400;
+  font-size: 35px;
+}
+.infoT1 {
+  font-family: var(--geist);
+  font-weight: 400;
+  font-size: 45px;
+}
+.infoT2 {
+  padding-top: 25px;
+  font-family: var(--geist);
+  font-weight: 400;
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+.infoT3 {
+  font-family: var(--geist);
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.infoT4 {
+  font-family: var(--geist);
+  font-weight: 400;
+  font-size: 25px;
+  padding-top: 40px;
+}
+
+.infoT5 {
+  font-family: var(--geist);
+  font-weight: 400;
+  font-size: 30px;
+  padding-top: 10px;
 }
 
 /* Mobile */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
-    padding: 1rem;
+    padding: 1.2rem;
     height: 100%;
   }
 
@@ -181,24 +191,65 @@
     margin-bottom: 2rem;
   }
 
-  .header h1 {
-    font-size: 2rem;
-  }
-
   .row {
     flex-direction: column;
+    gap: 0px;
   }
 
   .formCardBox {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 90%;
     max-width: 1200px;
     margin: auto;
   }
 
   .inputNnE {
     width: 50%;
+  }
+  .infoT {
+    font-family: var(--geist);
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .infoT1 {
+    font-family: var(--geist);
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .infoT2 {
+    padding-top: 25px;
+    font-family: var(--geist);
+    font-weight: 400;
+    font-size: 17px;
+    padding-bottom: 10px;
+  }
+
+  .infoT3 {
+    font-family: var(--geist);
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  .infoT4 {
+    font-family: var(--geist);
+    font-weight: 200;
+    font-size: 15px;
+    padding-top: 10px;
+  }
+
+  .infoT5 {
+    font-family: var(--geist);
+    font-weight: 400;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .contactInfoBox {
+    padding-left: 0%;
   }
 }
