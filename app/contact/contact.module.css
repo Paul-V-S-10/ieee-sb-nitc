@@ -1,0 +1,145 @@
+/* contact.module.css */
+
+.header {
+  background: linear-gradient(to bottom, #623a89, rgb(169, 113, 119), black);
+  gap: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  color: white;
+  padding-top: 150px;
+  margin-bottom: 5%;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  flex-wrap: wrap;
+  background: #000;
+  color: white;
+}
+
+.formContainer {
+  flex: 1;
+  min-width: 300px;
+  margin-right: 2rem;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(177, 90, 255, 0.3);
+}
+
+.formContainer h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.formGroup label {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.formGroup input,
+.formGroup textarea {
+  padding: 0.6rem;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.textarea {
+  border-radius: 12px;
+  resize: none;
+  height: 100px;
+  padding: 0.6rem;
+  border: none;
+  background-color: #1a1a1a;
+  color: white;
+  outline: none;
+}
+
+.button {
+  margin-top: 1rem;
+  padding: 0.7rem 2rem;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(to right, #a64ac9, #7b2ff7);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: linear-gradient(to right, #7b2ff7, #a64ac9);
+}
+
+.contactInfo {
+  flex: 1;
+  min-width: 250px;
+  padding: 1rem;
+}
+
+.contactInfo h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.contactInfo p {
+  margin: 0.5rem 0;
+}
+
+.map {
+  margin-top: 1rem;
+  border: 1px solid #555;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .formContainer,
+  .contactInfo {
+    margin: 0;
+    padding: 1.5rem 1rem;
+  }
+
+  .formContainer {
+    margin-bottom: 2rem;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+}
