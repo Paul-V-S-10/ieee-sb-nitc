@@ -7,7 +7,7 @@ const page = () => {
       <div className={styles.back}></div>
       <div className={styles.header}>
         <div className={styles.infoT1}>Contact Us</div>
-        <p>Get in Touch with IEEE SB NITC</p>
+        <div className={styles.infoT6}>Get in Touch with IEEE SB NITC</div>
       </div>
 
       <div className={styles.container}>

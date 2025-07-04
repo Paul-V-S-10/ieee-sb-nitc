@@ -174,6 +174,12 @@
   padding-top: 10px;
 }
 
+.infoT6 {
+  font-family: var(--geist);
+  font-weight: 400;
+  font-size: 20px;
+}
+
 /* Mobile */
 @media (max-width: 768px) {
   .container {
@@ -247,6 +253,12 @@
     font-size: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+
+  .infoT6 {
+    font-family: var(--geist);
+    font-weight: 400;
+    font-size: 13px;
   }
 
   .contactInfoBox {
