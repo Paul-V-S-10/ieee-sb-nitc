@@ -4,6 +4,7 @@ import ComingSoonDesign from "../../components/Elements/CommingSoon/CommingSoon"
 const page = () => {
   return (
     <div>
+      <div className={styles.back}></div>
       <div className={styles.header}>
         <h1>Contact Us</h1>
         <p>Get in Touch with IEEE SB NITC</p>
@@ -17,12 +18,12 @@ const page = () => {
             <div className={styles.row}>
               <div className={styles.inputGroup}>
                 <label className={styles.label}>Name:</label>
-                <input type="text" className={styles.input} />
+                <input type="text" className={styles.inputNnE} />
               </div>
 
               <div className={styles.inputGroup}>
                 <label className={styles.label}>Email:</label>
-                <input type="email" className={styles.input} />
+                <input type="email" className={styles.inputNnE} />
               </div>
             </div>
 

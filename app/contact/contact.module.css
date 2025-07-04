@@ -1,19 +1,30 @@
 /* contact.module.css */
 
-.header {
+.back {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 70%;
   background: linear-gradient(to bottom, #623a89, rgb(169, 113, 119), black);
+
+  filter: blur(20px);
+  z-index: -1;
+}
+
+.header {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 150px;
   color: white;
   padding-top: 150px;
   margin-bottom: 5%;
 }
 
 .header h1 {
+  font-family: Geist, sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
@@ -36,7 +47,6 @@
   align-items: center;
   width: 50%;
   max-width: 1200px;
-  margin: auto;
 }
 
 .formContainer {
@@ -65,6 +75,7 @@
 }
 
 .formCard h2 {
+  font-family: Geist, sans-serif;
   margin-bottom: 1.5rem;
   font-size: 1.2rem;
 }
@@ -88,7 +99,9 @@
 }
 
 .input,
+.inputNnE,
 .textarea {
+  font-family: Geist, sans-serif;
   padding: 0.6rem 1rem;
   border: 1px solid white;
   border-radius: 20px;
@@ -113,7 +126,7 @@
   color: white;
   font-weight: bold;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.5s ease;
 }
 
 .button:hover {
@@ -123,7 +136,9 @@
 .contactInfo {
   flex: 1;
   min-width: 250px;
-  margin: auto;
+  display: flex; /* Add this */
+  flex-direction: column; /* Add this */
+  justify-content: flex-end; /* Add this */
   justify-items: center;
 }
 
@@ -136,13 +151,17 @@
   margin: 0.5rem 0;
 }
 
+.contactInfoBox {
+  flex: 1;
+  display: flex; /* Add this */
+  flex-direction: column; /* Add this */
+  justify-content: space-between; /* Add this */
+  height: 100%; /* Add this */
+  padding-left: 20%;
+}
+
 .map {
   margin-top: 1rem;
-  border: 1px solid #555;
-  overflow: hidden;
-  width: 100%;
-  height: auto;
-  max-width: 400px;
 }
 
 /* Mobile */
@@ -150,6 +169,7 @@
   .container {
     flex-direction: column;
     padding: 1rem;
+    height: 100%;
   }
 
   .formContainer,
@@ -176,5 +196,9 @@
     width: 100%;
     max-width: 1200px;
     margin: auto;
+  }
+
+  .inputNnE {
+    width: 50%;
   }
 }
